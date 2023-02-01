@@ -1,0 +1,28 @@
+.student-page{
+    background-color: rgb(65, 65, 65);
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.student-container{
+    background-color: white;
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+span{
+    font-size: large;
+    font-weight: bold;
+}
+.logout-css{
+    
+    margin-top: 400px;
+    margin-left: 50px;
+
+}
