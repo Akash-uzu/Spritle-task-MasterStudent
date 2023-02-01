@@ -1,3 +1,9 @@
+@media (max-width: 500px) {
+    .main-container-master {
+        flex-direction: column;    
+    }
+    
+}
 .main-container-master{
     background-color: rgb(68, 68, 68);
     height: 100vh;

@@ -23,11 +23,11 @@ export default function Home(){
             </div>
             <div className="home-buttons">
                 <div className="login-container-home">
-                <h1>Already Have an Account?</h1>
+                <h2>Already Have an Account?</h2>
                 <button onClick={() => navigate('/login')}>Login</button>
                 </div>
                 <div className="signup-container-home">
-                <h1>Don't Have an Account?</h1>
+                <h2>Don't Have an Account?</h2>
                 <button onClick={() => navigate('/signup')}>signup</button>
 
                 </div>
