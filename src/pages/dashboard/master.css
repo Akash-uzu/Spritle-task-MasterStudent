@@ -1,6 +1,26 @@
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .main-container-master {
         flex-direction: column;    
+    }
+
+    .logout{
+        margin-top: 30px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+    
+            display: flex;
+            justify-content: end;
+            
+        
+        
+    }
+    .output-container {
+        background-color: white;
+        height: fit-content;
+        border-radius: 10px;
+        margin: 30px;
+        padding: 30px;
+        align-items: center;
     }
     
 }
@@ -10,20 +30,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 0%;
-    margin: 0%;
+    
 }
 .form-container{
     background-color: white;
-    height: 400px;
+    height: 50%;
     width: auto;
+    padding: 30px;
+    margin: 30px;
     border-radius: 10px;
-    padding-left: 50px;
-    margin-left: 10%;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
-
+    color: black;
 }
 .form-container input{
     height: 30px;
@@ -33,28 +51,33 @@
 }
 .output-container {
     background-color: white;
-    height: 345px;
-    width: 400px;
+    height: 50%;
+    width: auto;
     border-radius: 10px;
     margin: 30px;
     padding: 30px;
     align-items: center;
 }
 .logout{
-    margin-top: 30px;
-    margin-right: 50px;
+    margin: 30px;  
+    
 }
 .heading{
-    color: white;
-    font-size: 10px;
+    color: rgb(7, 7, 7);
+    font-size: 13px;
 }
 .heading1{
-    color: white;
+    color: rgb(241, 240, 240);
     font-size: 10px;
-    padding-top: 3px;
+    padding-top: 16px;
+    text-align: center;
 }
 
 input{
     border-radius: 8px;
     border: solid gray 1px
+}
+button{
+    margin: 3px;
+    
 }
