@@ -57,13 +57,16 @@ function MastersPage() {
   return (
     <>
     <div className="main-container-master">
-      <div className="heading">
+      <div className="heading1">
         <h1>Masters Page</h1>
 
       </div>
       
       <form onSubmit={handleSubmit} className="form-container">
+      <div className="heading"> 
       <h2>To the Students</h2>
+
+      </div>
         <input type="text" value={input} onChange={handleInputChange} />
         <button type="submit">Send</button>
       </form>
