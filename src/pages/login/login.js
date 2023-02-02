@@ -20,6 +20,8 @@ const LoginPage = () => {
       setError('Incorrect username or password');
       return;
     }
+    localStorage.setItem("username",user.username)
+
 
     // Log in as master or student
     if (user.role === 'Master') {

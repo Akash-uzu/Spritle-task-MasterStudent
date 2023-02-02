@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logout from "../../components/logout/Logout.js";
 import "./master.css";
+import Header from "../../UI/header.js";
 const {
   zero,
   one,
@@ -56,16 +56,28 @@ function MastersPage() {
   return (
     <>
       <div className="main-container-master">
+        <div>
+          <Header />
+        </div>
         <div className="main-output-wrapper">
-          <div className="heading1">
-            <h1>Masters Page</h1>
-          </div>
           <form onSubmit={handleSubmit} className="form-container">
             <div className="heading">
               <h2>To the Students</h2>
             </div>
-            <input type="text" value={input} onChange={handleInputChange} />
+            <input
+              type="text"
+              value={input}
+              onChange={handleInputChange}
+              placeholder="Eg:six(times(seven()))"
+            />
             <button type="submit">Send</button>
+            <div className="examples">
+              <h3>Examples:</h3>
+              <li>seven(times(five())) # must return 35</li>
+              <li>four(plus(nine())) # must return 13</li>
+              <li> eight(minus(three())) # must return 5</li>
+              <li> six(divided_by(two())) # must return 3</li>
+            </div>
           </form>
           <div className="output-container">
             <h3>Calculated value: {output}</h3>
@@ -81,12 +93,7 @@ function MastersPage() {
             }
             {error && <p style={{ color: "red" }}>{error}</p>}
           </div>
-          <div className="logout">
-          <Logout />
         </div>
-        </div>
-
-        
       </div>
     </>
   );

@@ -9,7 +9,6 @@ import Pagenotfound from './pages/dashboard/Pagenotfound';
 
 // react router
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import MyToast from './components/tostify/tostify';
 import Master from './pages/dashboard/master';
 import StudentPage from './pages/dashboard/student';
 
@@ -27,7 +26,6 @@ function App() {
       <Route path='*' element={<Pagenotfound/>}/>
     </Routes>
   </BrowserRouter>
-  <MyToast />
     </>
   );
 }
