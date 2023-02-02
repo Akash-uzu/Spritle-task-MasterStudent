@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logout from "../../components/logout/Logout.js";
-import "./master.css"
+import "./master.css";
 const {
   zero,
   one,
@@ -53,46 +53,42 @@ function MastersPage() {
   };
   window.localStorage.setItem("activitylog", JSON.stringify(activityLog));
 
-
   return (
     <>
-    <div className="main-container-master">
-      <div className="heading1">
-        <h1>Masters Page</h1>
+      <div className="main-container-master">
+        <div className="main-output-wrapper">
+          <div className="heading1">
+            <h1>Masters Page</h1>
+          </div>
+          <form onSubmit={handleSubmit} className="form-container">
+            <div className="heading">
+              <h2>To the Students</h2>
+            </div>
+            <input type="text" value={input} onChange={handleInputChange} />
+            <button type="submit">Send</button>
+          </form>
+          <div className="output-container">
+            <h3>Calculated value: {output}</h3>
+            <h3>Activity Log:</h3>
+            {
+              <ul>
+                {activityLog.map((item, index) => (
+                  <li key={index}>
+                    Input: {item.input} - Calculated Value: {item.output}
+                  </li>
+                ))}
+              </ul>
+            }
+            {error && <p style={{ color: "red" }}>{error}</p>}
+          </div>
+          <div className="logout">
+          <Logout />
+        </div>
+        </div>
 
+        
       </div>
-      
-      <form onSubmit={handleSubmit} className="form-container">
-      <div className="heading"> 
-      <h2>To the Students</h2>
-
-      </div>
-        <input type="text" value={input} onChange={handleInputChange} />
-        <button type="submit">Send</button>
-      </form>
-      <div className="output-container">
-      <h3>Calculated value: {output}</h3>
-      <h3>Activity Log:</h3>
-      {
-        <ul>
-          {activityLog.map((item, index) => (
-            <li key={index}>
-              Input: {item.input} - Calculated Value: {item.output}
-            </li>
-          ))}
-        </ul>
-      }
-      {error && <p style={{color: "red"}}>{error}</p>}
-    </div>
-    <div className="logout">
-    <Logout/>
-
-
-    </div>
-      </div>
-      
-    
-   </>
+    </>
   );
 }
 

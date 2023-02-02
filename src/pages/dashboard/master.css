@@ -1,5 +1,5 @@
 @media (max-width: 480px) {
-    .main-container-master {
+    .main-output-wrapper {
         flex-direction: column;    
     }
 
@@ -14,10 +14,16 @@
     justify-content: center;
     
 }
+.main-output-wrapper{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
 .form-container{
     background-color: white;
     height: 50%;
-    width: auto;
+    width: 60%;
     padding: 30px;
     margin: 30px;
     border-radius: 10px;
@@ -34,7 +40,7 @@
 .output-container {
     background-color: white;
     height: 50%;
-    width: auto;
+    width: 60%;
     border-radius: 10px;
     margin: 30px;
     padding: 30px;
@@ -52,6 +58,7 @@
     color: rgb(241, 240, 240);
     font-size: 10px;
     padding-top: 16px;
+    text-align: center;
 }
 
 input{
