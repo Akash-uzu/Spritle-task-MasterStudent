@@ -2,8 +2,38 @@
     .main-output-wrapper {
         flex-direction: column;    
     }
+    .output-container{
+        height: 50%;
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+
+    }
+    .form-container{
+        height: 50%;
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+
+
+    }
 
 }
+
+@media (min-width: 768px) {
+    .output-container{
+        width: 40%;
+        height: 60%;
+        padding: 40px;
+
+    }
+    .form-container{
+        width: 40%;
+        height: 60%;
+        padding: 40px;
+
+    }
+  }
 .main-container-master{
     background-color: rgb(68, 68, 68);
     height: 100vh;
@@ -15,16 +45,12 @@
     height: 90%;
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     
 }
 .form-container{
     background-color: white;
-    height: 50%;
-    width: 30%;
-    padding: 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -38,10 +64,7 @@
 }
 .output-container {
     background-color: white;
-    height: 50%;
-    width: 30%;
     border-radius: 10px;
-    padding: 30px;
     align-items: center;
     color: rgb(58, 58, 58);
 }
@@ -62,7 +85,7 @@ button{
     
 }
 .examples li {
-    font-size: small;
+    font-size: 11px;
     padding: 2px;
     font-family: sans-serif;
     opacity: 80%;
