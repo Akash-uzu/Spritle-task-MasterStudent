@@ -82,7 +82,7 @@ function MastersPage() {
           ))}
         </ul>
       }
-      {error && <p>{error}</p>}
+      {error && <p style={{color: "red"}}>{error}</p>}
     </div>
     <div className="logout">
     <Logout/>

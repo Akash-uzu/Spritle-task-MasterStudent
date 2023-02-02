@@ -1,4 +1,11 @@
-
+@media (max-width: 480px) {
+    .student-container{
+        height: 60%;
+        width: 80%;
+        
+    }
+    
+}
 .student-page{
     background-color: rgb(65, 65, 65);
     height: 100vh;
@@ -12,8 +19,8 @@
 }
 .student-container{
     background-color: rgb(255, 254, 254);
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 75%;
     border-radius: 10px;
     text-align: center;
     
